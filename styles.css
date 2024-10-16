@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#div_element {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+
+#div_element > div:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#input_el {
+    padding: 10px;
+    border-radius: 4px 0 0 4px;
+    border: 1px solid #ccc;
+    width: 200px;
+    outline: none;
+}
+
+#button_el {
+    padding: 10px;
+    border-radius: 0 4px 4px 0;
+    border: 1px solid #f79c42;
+    background-color: #f79c42;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+#button_el:hover {
+    background-color: #e68a2c;
+}
+
+#city, #country, #temperature {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#city::before, #country::before, #temperature::before {
+    font-size: 12px;
+    color: #7a7a7a;
+    display: block;
+    font-weight: normal;
+}
+
+#city::before {
+    content: 'City';
+}
+
+#country::before {
+    content: 'Country';
+}
+
+#temperature::before {
+    content: 'Temperature';
+}
+
+#temperature {
+    font-size: 28px;
+    color: #f79c42;
+}
+
+
+
